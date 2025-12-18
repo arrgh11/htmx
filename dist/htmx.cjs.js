@@ -1923,11 +1923,12 @@ var htmx = (function() {
           for (let i = 0; i < oobSelectValues.length; i++) {
             const oobSelectValue = oobSelectValues[i].split(':', 2)
             let id = oobSelectValue[0].trim()
-            if (id.indexOf('#') === 0) {
-              id = id.substring(1)
-            }
+            // if (id.indexOf('#') === 0) {
+            //   id = id.substring(1)
+            // }
             const oobValue = oobSelectValue[1] || 'true'
-            const oobElement = fragment.querySelector('#' + id)
+            // const oobElement = fragment.querySelector('#' + id)
+            const oobElement = fragment.querySelector(id)
             if (oobElement) {
               oobSwap(oobValue, oobElement, settleInfo, rootNode)
             }
