@@ -1923,6 +1923,7 @@ var htmx = (function() {
           for (let i = 0; i < oobSelectValues.length; i++) {
             const oobSelectValue = oobSelectValues[i].split(':', 2)
             let id = oobSelectValue[0].trim()
+            console.log('OOB select id:', id)
             // if (id.indexOf('#') === 0) {
             //   id = id.substring(1)
             // }
